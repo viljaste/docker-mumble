@@ -1,0 +1,15 @@
+mumble:
+  image: viljaste/mumble:latest
+  hostname: mumble
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes_from:
+    - mumbledata
+  environment:
+    - SERVER_NAME=localhost
+mumbledata:
+  image: viljaste/data:latest
+  hostname: mumbledata
+  volumes:
+    - /mumble
