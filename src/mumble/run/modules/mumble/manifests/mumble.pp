@@ -1,4 +1,6 @@
 class mumble::mumble {
+  require mumble::mumble::supervisor
+
   bash_exec { 'mkdir -p /mumble/data': }
 
   bash_exec { 'chown -R mumble-server.mumble-server /mumble/data':

@@ -1,5 +1,5 @@
 [program:mumble]
-command = /usr/sbin/murmurd -ini /etc/mumble-server.ini
+command = /usr/sbin/murmurd -ini /etc/mumble-server.ini -supw <%= @supw %>
 autostart = true
 autorestart = true
 stdout_events_enabled = true
