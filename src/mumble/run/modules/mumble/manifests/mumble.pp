@@ -12,7 +12,7 @@ class mumble::mumble {
     require => Bash_exec['chown -R mumble-server.mumble-server /mumble/data']
   }
 
-  bash_exec { "murmurd -fg -ini /etc/mumble-server.ini -supw '$supw'":
+  bash_exec { "murmurd -ini /etc/mumble-server.ini -supw '$supw'":
     require => File['/etc/mumble-server.ini']
   }
 }
