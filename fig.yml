@@ -2,12 +2,12 @@ mumble:
   image: viljaste/mumble:latest
   hostname: mumble
   ports:
-    - "80:80"
-    - "443:443"
+    - "64738:64738"
   volumes_from:
     - mumbledata
   environment:
-    - SERVER_NAME=localhost
+    - SERVERPASSWORD=
+    - USERS=100
 mumbledata:
   image: viljaste/data:latest
   hostname: mumbledata

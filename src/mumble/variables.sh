@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-if [ -z "${SERVER_NAME}" ]; then
-  SERVER_NAME="localhost"
+export FACTER_SERVERPASSWORD="${SERVERPASSWORD}"
+
+if [ -z "${USERS}" ]; then
+  USERS="100"
 fi
 
-export FACTER_SERVER_NAME="${SERVER_NAME}"
+export FACTER_USERS="${USERS}"

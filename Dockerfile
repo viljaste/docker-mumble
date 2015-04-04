@@ -11,7 +11,6 @@ RUN /src/entrypoint.sh build
 
 VOLUME ["/mumble"]
 
-EXPOSE 80
-EXPOSE 443
+EXPOSE 64738
 
 CMD ["/src/entrypoint.sh", "run"]
