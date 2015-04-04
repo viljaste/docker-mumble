@@ -6,6 +6,7 @@ mumble:
   volumes_from:
     - mumbledata
   environment:
+    - SUPW=SuperUser
     - SERVERPASSWORD=
     - USERS=100
 mumbledata:
