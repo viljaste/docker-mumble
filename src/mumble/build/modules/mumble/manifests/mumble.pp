@@ -1,7 +1,7 @@
 class mumble::mumble {
   file { '/tmp/umurmur-0.2.15.tar.gz':
     ensure => present,
-    source => 'puppet:///modules/php/tmp/umurmur-0.2.15.tar.gz'
+    source => 'puppet:///modules/mumble/tmp/umurmur-0.2.15.tar.gz'
   }
 
   bash_exec { 'cd /tmp && tar xzf umurmur-0.2.15.tar.gz':
