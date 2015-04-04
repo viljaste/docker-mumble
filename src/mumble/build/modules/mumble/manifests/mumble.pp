@@ -1,3 +1,3 @@
 class mumble::mumble {
-  require mumble::mumble::package
+  require mumble::mumble::packages
 }
