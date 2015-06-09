@@ -1,4 +1,4 @@
-class mumble::mumble::packages {
+class mumble::packages {
   package {[
       'mumble-server'
     ]:

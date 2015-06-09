@@ -1,6 +1,7 @@
 mumble:
   image: viljaste/mumble:latest
   hostname: mumble
+  restart: always
   ports:
     - "64738:64738"
   volumes_from:
